@@ -12,13 +12,13 @@ on:
         type: string
 jobs:
   avisa:
-    runs-on: ubuntu-latests
+    runs-on: ubuntu-latest
     steps:
       - name: Avisa quien lo ejecuto
         run: echo "${{ github.actor }} ejecuto la accion"
   saluda:
     if: ${{ github.event_name == 'workflow_dispatch' }}
-    runs-on: ubuntu-latests
+    runs-on: ubuntu-latest
     steps: 
       - name: Muestra los datos del form
-        run: echo "${{ inputs.nombre }} se registro en el form de la accion"
+        run: echo "${{ inputs.name }} se registro en el form de la accion"

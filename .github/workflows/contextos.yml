@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Desplegando en la rama $GITHUB_REF"
-  
+      - run: echo "$MENSAJE_SECRETO" 
