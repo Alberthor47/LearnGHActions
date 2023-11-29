@@ -1,0 +1,24 @@
+name: expresiones
+run-name: ¡Estoy aprendiendo de expresiones!
+on: 
+  pull_request:
+    types: opened
+  workflow_dispatch:
+    inputs: 
+      name:
+        description: 'Your name'
+        required: true
+        default: 'Alberto'
+        type: string
+jobs:
+  avisa:
+    runs-on: ubuntu-latests
+    steps:
+      - name: Avisa quien lo ejecuto
+        run: echo "${{ github.actor }} ejecuto la accion"
+  saluda:
+    if: ${{ github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latests
+    steps: 
+      - name: Muestra los datos del form
+        run: echo "${{ inputs.nombre }} se registro en el form de la accion"
