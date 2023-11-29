@@ -1,0 +1,11 @@
+name: Variable
+run-name: saludos desde variable
+
+on: push 
+
+jobs:
+  saludos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: manda un saludo
+        run: echo "$MENSAJE_SECRETO" 
