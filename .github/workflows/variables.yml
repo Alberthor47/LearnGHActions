@@ -9,3 +9,5 @@ jobs:
     steps:
       - name: manda un saludo
         run: echo "$MENSAJE_SECRETO" 
+      - name: debbug de env
+        run: echo "${{ toJSON(env) }}"
