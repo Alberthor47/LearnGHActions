@@ -1,4 +1,5 @@
 name: expresiones
+run-name: ¡Estoy aprendiendo de expresiones!
 on: 
   pull_request:
     types: opened
