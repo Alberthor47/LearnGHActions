@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-tatest
     steps:
       - name: manda un saludo
-	run: echo "$MENSAJE_SECRETO" 
+        run: echo "$MENSAJE_SECRETO" 
