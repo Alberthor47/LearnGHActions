@@ -11,3 +11,5 @@ jobs:
         run: echo "$MENSAJE_SECRETO" 
       - name: debbug de env
         run: echo "${{ toJSON(env) }}"
+      - name: debbug de vars
+        run: echo "${{ toJSON(vars) }}"
