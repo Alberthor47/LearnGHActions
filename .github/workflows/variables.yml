@@ -5,7 +5,7 @@ on: push
 
 jobs:
   saludos:
-    runs-on: ubuntu-tatest
+    runs-on: ubuntu-latest
     steps:
       - name: manda un saludo
         run: echo "$MENSAJE_SECRETO" 
