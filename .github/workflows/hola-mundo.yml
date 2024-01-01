@@ -24,7 +24,7 @@ jobs:
 
       # Runs the node setup
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.0
+        uses: actions/setup-node@v4.0.1
 
       # Runs the index.js file
       - run: node index.js
